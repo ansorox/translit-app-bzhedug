@@ -194,9 +194,12 @@ function ady_bzhe2field(value) {
 
 	// convert digraphic vowels
 	value = value.replace(/уа/g,'wa')
-	value = value.replace(/эу /g,'ew ')
-	value = value.replace(/эу\t/g,'ew	')
-	value = value.replace(/эу\n/g,'ew\n')
+	value = value.replace(/эу\s/g,'ew\s')
+	value = value.replace(/эу\t/g,'ew\t')
+	value = value.replace(/эу\n/g,'ew\n')	
+	value = value.replace(/эу\n/g,'ew\n')	
+	value = value.replace(/эу$/g,'ew')
+
 	
 	// convert unigraphic vowels
 	value = value.replace(/э/g,'e')
